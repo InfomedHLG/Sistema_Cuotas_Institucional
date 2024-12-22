@@ -149,11 +149,7 @@ DATABASES = {
 
 Gunicorn es un servidor WSGI para aplicaciones web en Python. Es ampliamente utilizado para desplegar aplicaciones Django en producción debido a su capacidad para manejar múltiples solicitudes simultáneamente, lo que mejora el rendimiento y la escalabilidad de la aplicación.
 
-El script de inicio de Gunicorn se encuentra en el repositorio, puedes descargarlo haciendo clic [aquí](www/pquotadmin/gunicorn_start.sh). Asegúrate de copiarlo a la ubicación adecuada y darle permisos de ejecución:
-
-
-El script de inicio de Gunicorn se encuentra en el repositorio. Puedes descargarlo haciendo clic [aquí](www/pquotadmin/gunicorn_start.sh).
-
+El script de inicio de Gunicorn se encuentra en el repositorio en la ruta `www/pquotadmin/gunicorn_start.sh`, puedes descargarlo haciendo clic [aquí](www/pquotadmin/gunicorn_start.sh). Asegúrate de copiarlo a la ubicación adecuada y darle permisos de ejecución:
 
 ```bash
 # Dar permisos de ejecución
@@ -164,7 +160,7 @@ chmod +x /srv/cuotas/pquotadmin/gunicorn_start.sh
 
 Supervisor es una herramienta de gestión de procesos que permite iniciar, detener y reiniciar aplicaciones automáticamente. Es especialmente útil para asegurar que las aplicaciones se mantengan en ejecución, reiniciándolas automáticamente en caso de fallos.
 
-El archivo de configuración para Supervisor se encuentra en el repositorio en la ruta `www\pquotadmin\pquot_admin.conf`. Asegúrate de copiarlo a la ubicación adecuada:
+El archivo de configuración para Supervisor se encuentra en el repositorio en la ruta `www\pquotadmin\pquot_admin.conf`. puedes descargarlo haciendo clic [aquí](www\pquotadmin\pquot_admin.conf). Asegúrate de copiarlo a la ubicación adecuada
 
 ```bash
 # Crear directorio para logs
@@ -190,17 +186,18 @@ chmod -R 755 /srv/cuotas/pquotuser
 
 ### 2.7 Configuración de Nginx
 
-Los archivos de configuración de Nginx están en el repositorio en la ruta `ServerWebs\nginx\`:
+Los archivos de configuración de Nginx están en el repositorio en la ruta `ServerWebs\nginx\`, puedes descargarlo haciendo clic [aquí](ServerWebs\nginx\):
 
-- **VirtualHost para la interfaz administrativa:** `admincuotas.hlg.sld.cu.conf`
-- **VirtualHost para la interfaz de usuario:** `cuotas.hlg.sld.cu.conf`
+- **VirtualHost para la interfaz administrativa:** [`admincuotas.hlg.sld.cu.conf`](ServerWebs/nginx/admincuotas.hlg.sld.cu.conf)
+- **VirtualHost para la interfaz de usuario:** [`cuotas.hlg.sld.cu.conf`](ServerWebs/nginx/cuotas.hlg.sld.cu.conf)
 
 ### Configuración de Apache (opcional)
 
-Si prefieres usar Apache en lugar de Nginx, los archivos de VirtualHost están en el repositorio en la ruta `ServerWebs\apache2\`:
+Si prefieres usar Apache en lugar de Nginx, los archivos de VirtualHost están en el repositorio en la ruta `ServerWebs\apache2\`, puedes descargarlo haciendo clic [aquí](ServerWebs\apache2\):
 
-- **VirtualHost para la interfaz administrativa:** `admincuotas.hlg.sld.cu.conf`
-- **VirtualHost para la interfaz de usuario:** `cuotas.hlg.sld.cu.conf`
+- **VirtualHost para la interfaz administrativa:** [`admincuotas.hlg.sld.cu.conf`](ServerWebs/apache2/admincuotas.hlg.sld.cu.conf)
+- **VirtualHost para la interfaz de usuario:** [`cuotas.hlg.sld.cu.conf`](ServerWebs/apache2/cuotas.hlg.sld.cu.conf)
+
 
 ## 3. Tareas de Mantenimiento
 
