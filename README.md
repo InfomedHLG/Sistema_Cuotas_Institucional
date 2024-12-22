@@ -149,7 +149,10 @@ DATABASES = {
 
 Gunicorn es un servidor WSGI para aplicaciones web en Python. Es ampliamente utilizado para desplegar aplicaciones Django en producción debido a su capacidad para manejar múltiples solicitudes simultáneamente, lo que mejora el rendimiento y la escalabilidad de la aplicación.
 
-El script de inicio de Gunicorn se encuentra en el repositorio en la ruta (www\pquotadmin\gunicorn_start.sh). Asegúrate de copiarlo a la ubicación adecuada y darle permisos de ejecución:
+El script de inicio de Gunicorn se encuentra en el repositorio, puedes descargarlo haciendo clic [aquí](www/pquotadmin/gunicorn_start.sh). Asegúrate de copiarlo a la ubicación adecuada y darle permisos de ejecución:
+
+
+El script de inicio de Gunicorn se encuentra en el repositorio. Puedes descargarlo haciendo clic [aquí](www/pquotadmin/gunicorn_start.sh).
 
 
 ```bash
